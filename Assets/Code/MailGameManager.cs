@@ -113,4 +113,9 @@ public class MailGameManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
         
     }
+
+    public int GetScore()
+    {
+        return score;
+    }
 }

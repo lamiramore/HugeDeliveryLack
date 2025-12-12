@@ -1,3 +1,4 @@
+using LeaderboardCreatorDemo;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -11,9 +12,12 @@ public class MainMenuManager : MonoBehaviour
     public GameObject BTNQuitYes;
     public GameObject BTNQuitNo;
     public GameObject BTNBackSettings;
+    public GameObject BTNLeaderboard;
 
     public GameObject SettingsPanel;
     public GameObject QuitConfirmPanel;
+    public GameObject LeaderboardPanel;
+    public LeaderboardManager LeaderboardManager;
 
 
     void Start()
@@ -66,5 +70,12 @@ public class MainMenuManager : MonoBehaviour
         
         EventSystem.current.SetSelectedGameObject(BTNQuit);
     }
-    
+
+    public void ToggleLeaderboard()
+    {
+        if (LeaderboardPanel == null) return;
+        LeaderboardPanel.SetActive(!LeaderboardPanel.activeSelf);
+        LeaderboardManager.LoadEntries();
+    }
+
 }
