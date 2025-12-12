@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class MailGameManager : MonoBehaviour
 {
@@ -109,5 +110,7 @@ public class MailGameManager : MonoBehaviour
     {
         gameActive = false;
         Debug.Log("Game Over!");
+        SceneManager.LoadScene("MainMenu");
+        
     }
 }
