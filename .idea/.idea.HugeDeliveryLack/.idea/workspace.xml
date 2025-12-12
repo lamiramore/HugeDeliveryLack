@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="bb10742a-244f-4f43-897d-850fe68cba59" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HugeDeliveryLack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HugeDeliveryLack/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/MailGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/MailGameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UI/MainMenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UI/MainMenuManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/Font/DeliciousHandrawn-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Font/DeliciousHandrawn-Regular SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +21,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Code/AudioSlider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/LeaderboardManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -27,23 +31,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;&lt;unknown&gt;&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "<unknown>",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="E:/HTKAusbildung/Projekte/SEM3_GameJam_TinyWorld/Builds/âchtuhrbuild\Huge Delivery Lack.exe" />
+      <option name="EXE_PATH" value="E:/HTKAusbildung/Projekte/SEM3_GameJam_TinyWorld/Builds/zehnuhrbuild\Huge Delivery Lack.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="E:\HTKAusbildung\Projekte\SEM3_GameJam_TinyWorld\Builds\âchtuhrbuild" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -93,7 +97,6 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="bb10742a-244f-4f43-897d-850fe68cba59" name="Changes" comment="" />
@@ -104,7 +107,7 @@
       <workItem from="1765515189809" duration="4665000" />
       <workItem from="1765521593003" duration="838000" />
       <workItem from="1765525083144" duration="1604000" />
-      <workItem from="1765531894699" duration="1107000" />
+      <workItem from="1765533645806" duration="3346000" />
     </task>
     <servers />
   </component>
