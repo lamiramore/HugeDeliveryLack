@@ -213,6 +213,7 @@ MonoBehaviour:
   player: {fileID: 0}
   triggerDistance: 5
   animatorTrigger: Fall
+  StandTrigger: Stand
   boxCol: {fileID: 7442533847647887399}
   fallAngle: 90
   sideTiltAngle: 15
@@ -229,7 +230,7 @@ Animator:
   m_GameObject: {fileID: 2932743867112286871}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d4896eceb2950484d96fa64c315a4aa0, type: 2}
+  m_Controller: {fileID: 9100000, guid: a274ee2a8eff80546b631b535aebd6de, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
