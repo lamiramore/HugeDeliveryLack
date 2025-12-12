@@ -16,6 +16,7 @@ public class MailGameManager : MonoBehaviour
     public List<Mailbox> allMailboxes = new List<Mailbox>();
     public TMP_Text timerText;
     public TMP_Text scoreText;
+    public GameObject gameOverPanel;
 
     // Runtime 
     private float timeRemaining;
@@ -110,7 +111,7 @@ public class MailGameManager : MonoBehaviour
     {
         gameActive = false;
         Debug.Log("Game Over!");
-        SceneManager.LoadScene("MainMenu");
+        gameOverPanel.SetActive(true);
         
     }
 
