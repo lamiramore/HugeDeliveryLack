@@ -3,11 +3,12 @@ using UnityEngine;
 public class Mailbox : Interactable
 {
     [Header("Visual")]
-    public GameObject letterVisual;
-    
+    public GameObject letterVisual;  
+    public GameObject lightVisual;    
+
     [Header("Effects")]
     public ParticleSystem collectParticles;
-    
+
     private bool hasLetter = false;
 
     void Start()
@@ -27,16 +28,15 @@ public class Mailbox : Interactable
 
         if (!hasLetter) return;
 
-        // Collect the letter
+        // Collect letter
         hasLetter = false;
         UpdateVisual();
 
-        if(collectParticles != null) collectParticles.Play();
-        
+        if (collectParticles != null)
+            collectParticles.Play();
+
         if (MailGameManager.instance != null)
-        {
             MailGameManager.instance.CollectLetter();
-        }
     }
 
     public bool HasLetter()
@@ -48,5 +48,8 @@ public class Mailbox : Interactable
     {
         if (letterVisual != null)
             letterVisual.SetActive(hasLetter);
+        
+        if (lightVisual != null)
+            lightVisual.SetActive(hasLetter);
     }
 }
