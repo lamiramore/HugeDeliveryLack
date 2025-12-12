@@ -10,7 +10,7 @@ public class Obsticle_Gletscheis : MonoBehaviour
         Player p = other.GetComponent<Player>();
         if (p != null)
         {
-            p.currentSpeed *= slowMultiplier;
+            p.currentSpeed *= 1 / slowMultiplier;
             p.environmentSpeedMultiplier = 1f / slowMultiplier;
         }
     }

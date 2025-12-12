@@ -1550,6 +1550,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TinyPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 8821825758555427648, guid: 1b77cc7734d8c6c468c2a8c3f9dbafbc, type: 3}
+      propertyPath: interactableLayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 9043885809197887475, guid: 1b77cc7734d8c6c468c2a8c3f9dbafbc, type: 3}
       propertyPath: referenceCamera
       value: 
@@ -52300,10 +52304,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f92f46beb000de4e8120a3b0aadc23a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MailGameManager
-  startTime: 180
+  startTime: 60
   pointsPerLetter: 100
-  timePerLetter: 10
-  allMailboxes: []
+  timePerLetter: 15
+  allMailboxes:
+  - {fileID: 46823508}
+  - {fileID: 1175285760}
+  - {fileID: 1245751473}
+  - {fileID: 1838300812}
+  - {fileID: 1109443711}
+  - {fileID: 1631432588}
+  - {fileID: 876771047}
+  - {fileID: 895705034}
+  - {fileID: 892518807}
+  - {fileID: 1619436960}
+  - {fileID: 1625046924}
+  - {fileID: 1620838832}
+  - {fileID: 967674248}
+  - {fileID: 1618740449}
+  - {fileID: 911659723}
+  - {fileID: 1654095864}
+  - {fileID: 1845944789}
+  - {fileID: 161213694}
+  - {fileID: 1232317639}
+  - {fileID: 1554646761}
+  - {fileID: 675931768}
+  - {fileID: 2049397244}
+  - {fileID: 2276832}
+  - {fileID: 1434727040}
+  - {fileID: 60433610}
+  - {fileID: 1747078081}
+  - {fileID: 2009356028}
+  - {fileID: 351815193}
+  - {fileID: 81650128}
+  - {fileID: 1735328469}
+  - {fileID: 1886549437}
+  - {fileID: 682033734}
+  - {fileID: 1529290444}
   timerText: {fileID: 807563314}
   scoreText: {fileID: 795739309}
 --- !u!114 &1910103454
@@ -59269,7 +59306,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1016297732814333777, guid: 813f47e13900569429bcdd593d32fe58, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
