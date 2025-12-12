@@ -8,9 +8,6 @@ public class AudioManager : MonoBehaviour
     public AudioSource musicSource;
     public AudioSource sfxSource;
     public AudioSource movementSource;
-    
-    [Header("3D Sources")]
-    public AudioSource houseSource;
 
     [Header("Clips - Atmosphere")]
     public AudioClip backgroundMusic;
@@ -21,6 +18,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip speedPadClip;
     public AudioClip crashClip;
     public AudioClip interactCollectClip;
+    public AudioClip speedPanelClip;
 
     public AudioClip footstepClip1;
     public AudioClip footstepClip2;
@@ -30,7 +28,6 @@ public class AudioManager : MonoBehaviour
     public AudioClip dashClip;
     public AudioClip jumpClip;
     public AudioClip jumpPowerUpClip;
-    public AudioClip houseClip;
 
     void Awake()
     {
@@ -84,13 +81,10 @@ public class AudioManager : MonoBehaviour
         }
     }
     
-    public void PlayHouseSound()
+    public void PlaySpeedPanel()      
     {
-        
+        if (sfxSource != null && speedPanelClip != null)
+            sfxSource.PlayOneShot(speedPanelClip);
     }
-
-    public void StopHouseSound()
-    {
-
-    }
+    
 }

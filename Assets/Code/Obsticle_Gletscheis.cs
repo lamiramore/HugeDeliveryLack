@@ -12,6 +12,18 @@ public class Obsticle_Gletscheis : MonoBehaviour
         {
             p.currentSpeed *= 1 / slowMultiplier;
             p.environmentSpeedMultiplier = 1f / slowMultiplier;
+            
+            if (AudioManager.instance != null)
+            {
+                if (Mathf.Approximately(slowMultiplier, 0.6f))
+                {
+                    AudioManager.instance.PlaySpeedPanel();
+                }
+                else if (slowMultiplier > 1f)
+                {
+                    AudioManager.instance.PlayCrash();
+                }
+            }
         }
     }
 

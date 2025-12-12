@@ -5,6 +5,9 @@ public class Mailbox : Interactable
     [Header("Visual")]
     public GameObject letterVisual;  
     public GameObject lightVisual;    
+    
+    public AudioSource mailboxSource;
+    public AudioClip mailboxClip;
 
     [Header("Effects")]
     public ParticleSystem collectParticles;
@@ -20,6 +23,17 @@ public class Mailbox : Interactable
     {
         hasLetter = true;
         UpdateVisual();
+
+        // 🔊 3D Mailbox Sound starten
+        if (mailboxSource != null && mailboxClip != null)
+        {
+            mailboxSource.clip = mailboxClip;
+            mailboxSource.loop = true;
+            mailboxSource.spatialBlend = 1f;   // 3D
+            mailboxSource.minDistance = 5f;
+            mailboxSource.maxDistance = 50f;
+            mailboxSource.Play();
+        }
     }
 
     public override void Interact()
@@ -28,12 +42,14 @@ public class Mailbox : Interactable
 
         if (!hasLetter) return;
 
-        // Collect letter
         hasLetter = false;
         UpdateVisual();
 
         if (collectParticles != null)
             collectParticles.Play();
+        
+        if (mailboxSource != null)
+            mailboxSource.Stop();
 
         if (MailGameManager.instance != null)
             MailGameManager.instance.CollectLetter();

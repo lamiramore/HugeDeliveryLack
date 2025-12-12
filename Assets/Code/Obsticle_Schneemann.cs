@@ -55,6 +55,8 @@ public class SnowmanFall : MonoBehaviour
     {
         canTrigger = false;
         
+        AudioManager.instance.PlayCrash();
+        
         yield return StartCoroutine(RotateCollider(boxCol.transform, startRot, fallRot, fallTime));
         
         yield return new WaitForSeconds(resetDelay);
