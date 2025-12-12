@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb10742a-244f-4f43-897d-850fe68cba59" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Obsticle_Gletscheis.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Obsticle_Gletscheis.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/- SettingsPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/- SettingsPanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mira.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Mira.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/Font/DeliciousHandrawn-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Font/DeliciousHandrawn-Regular SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +17,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Code/AudioSlider.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -96,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1765515185969</updated>
-      <workItem from="1765515189809" duration="2378000" />
+      <workItem from="1765515189809" duration="4665000" />
     </task>
     <servers />
   </component>

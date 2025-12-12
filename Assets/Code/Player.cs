@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
 
     public Animator animator;
     public PlayerInput input;
+    public AudioManager audioManager;
     public CharacterController controller;
     public bool canMove = true;
     

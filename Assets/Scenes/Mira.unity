@@ -2200,6 +2200,8 @@ GameObject:
   - component: {fileID: 805150746}
   - component: {fileID: 805150747}
   - component: {fileID: 805150748}
+  - component: {fileID: 805150750}
+  - component: {fileID: 805150749}
   m_Layer: 0
   m_Name: UIManager -------------------
   m_TagString: Untagged
@@ -2276,6 +2278,47 @@ MonoBehaviour:
   allMailboxes: []
   timerText: {fileID: 698018968}
   scoreText: {fileID: 1293909486}
+--- !u!114 &805150749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805150744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81df59c341f8a21418a1a66e05d3d685, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioSlider
+  audioMixer: {fileID: 0}
+  masterSlider: {fileID: 0}
+  musicSlider: {fileID: 0}
+  sfxSlider: {fileID: 0}
+  atmoSlider: {fileID: 0}
+--- !u!114 &805150750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805150744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3729cf2b851787c4c94310160bf74b15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  musicSource: {fileID: 0}
+  sfxSource: {fileID: 0}
+  movementSource: {fileID: 0}
+  backgroundMusic: {fileID: 0}
+  collectClip: {fileID: 0}
+  boostClip: {fileID: 0}
+  speedPadClip: {fileID: 0}
+  crashClip: {fileID: 0}
+  footstepClip1: {fileID: 0}
+  footstepClip2: {fileID: 0}
+  footstepClip3: {fileID: 0}
+  footstepClip4: {fileID: 0}
 --- !u!1 &815125589
 GameObject:
   m_ObjectHideFlags: 0
