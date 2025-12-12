@@ -1612,8 +1612,24 @@ PrefabInstance:
       value: TinyPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 8821825758555427648, guid: 1b77cc7734d8c6c468c2a8c3f9dbafbc, type: 3}
+      propertyPath: interactionRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8821825758555427648, guid: 1b77cc7734d8c6c468c2a8c3f9dbafbc, type: 3}
       propertyPath: interactableLayer.m_Bits
       value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043885809197887475, guid: 1b77cc7734d8c6c468c2a8c3f9dbafbc, type: 3}
+      propertyPath: dashCooldown
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043885809197887475, guid: 1b77cc7734d8c6c468c2a8c3f9dbafbc, type: 3}
+      propertyPath: dashStrength
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043885809197887475, guid: 1b77cc7734d8c6c468c2a8c3f9dbafbc, type: 3}
+      propertyPath: jumpStrength
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9043885809197887475, guid: 1b77cc7734d8c6c468c2a8c3f9dbafbc, type: 3}
       propertyPath: referenceCamera
