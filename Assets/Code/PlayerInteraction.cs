@@ -26,7 +26,7 @@ public class PlayerInteraction : MonoBehaviour
     void TryInteract()
     {
         // Raycast from camera/player / can change to trigger if needed 
-        Ray ray = new Ray(transform.position, transform.forward);
+        Ray ray = new Ray(transform.position - transform.forward, transform.forward);
         RaycastHit hit;
 
         if (Physics.SphereCast(ray, 1.5f, out hit, interactionRange, interactableLayer))
