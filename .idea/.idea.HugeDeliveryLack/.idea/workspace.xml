@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb10742a-244f-4f43-897d-850fe68cba59" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HugeDeliveryLack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HugeDeliveryLack/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FICKUNITY/Terrain.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FICKUNITY/Terrain.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Obsticle_Gletscheis.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Obsticle_Gletscheis.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +28,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "szenewechsel",
+    "git-widget-placeholder": "miracle",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -97,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1765515185969</updated>
-      <workItem from="1765515189809" duration="1529000" />
+      <workItem from="1765515189809" duration="2378000" />
     </task>
     <servers />
   </component>
