@@ -17,7 +17,10 @@ public class AudioManager : MonoBehaviour
     public AudioClip boostClip;     
     public AudioClip speedPadClip;  
     public AudioClip crashClip;      
-    public AudioClip footstepClip;
+    public AudioClip footstepClip1;
+    public AudioClip footstepClip2;
+    public AudioClip footstepClip3;
+    public AudioClip footstepClip4;
 
     void Awake()
     {
@@ -65,7 +68,9 @@ public class AudioManager : MonoBehaviour
         {
             if (!movementSource.isPlaying)
             {
-                movementSource.clip = footstepClip;
+                AudioClip[] steps = { footstepClip1, footstepClip2, footstepClip3, footstepClip4 };
+                movementSource.clip = steps[Random.Range(0, steps.Length)];
+                
                 movementSource.Play();
             }
             movementSource.pitch = 0.9f + (currentSpeed / 20f); 
