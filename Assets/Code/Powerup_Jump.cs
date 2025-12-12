@@ -8,6 +8,7 @@ public class Powerup_Jump : MonoBehaviour
     
     private Collider ObjectCollider;
     private Renderer[] renderers;
+    public AudioManager AudioManager;
     
     private void Awake()
     {
@@ -20,10 +21,10 @@ public class Powerup_Jump : MonoBehaviour
         Player p = other.GetComponent<Player>();
         if (p != null)
         {
-            // Boost auslösen
+            AudioManager.PlayJumpPowerUp();
+            
             p.AddExternalVerticalBoost(boostForce);
-
-            // Respawn starten
+            
             StartCoroutine(RespawnRoutine());
         }
     }

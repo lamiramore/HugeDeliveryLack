@@ -8,19 +8,29 @@ public class AudioManager : MonoBehaviour
     public AudioSource musicSource;
     public AudioSource sfxSource;
     public AudioSource movementSource;
+    
+    [Header("3D Sources")]
+    public AudioSource houseSource;
 
     [Header("Clips - Atmosphere")]
     public AudioClip backgroundMusic;
-    
+
     [Header("Clips - SFX")]
-    public AudioClip collectClip;    
-    public AudioClip boostClip;     
-    public AudioClip speedPadClip;  
-    public AudioClip crashClip;      
+    public AudioClip collectClip;
+    public AudioClip boostClip;
+    public AudioClip speedPadClip;
+    public AudioClip crashClip;
+    public AudioClip interactCollectClip;
+
     public AudioClip footstepClip1;
     public AudioClip footstepClip2;
     public AudioClip footstepClip3;
     public AudioClip footstepClip4;
+    
+    public AudioClip dashClip;
+    public AudioClip jumpClip;
+    public AudioClip jumpPowerUpClip;
+    public AudioClip houseClip;
 
     void Awake()
     {
@@ -37,31 +47,25 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    // picking up a Letter
-    public void PlayCollect()
+    public void PlayCollect()  => PlaySFX(collectClip);
+    public void PlayBoost()    => PlaySFX(boostClip);
+    public void PlaySpeedPad() => PlaySFX(speedPadClip);
+    public void PlayCrash()    => PlaySFX(crashClip);
+
+    public void PlayDash()         => PlaySFX(dashClip);
+    public void PlayJump()         => PlaySFX(jumpClip);
+    public void PlayJumpPowerUp()  => PlaySFX(jumpPowerUpClip);
+
+    void PlaySFX(AudioClip clip)
     {
-        if (collectClip != null) sfxSource.PlayOneShot(collectClip);
+        if (clip != null) sfxSource.PlayOneShot(clip);
     }
 
-    // Floating Coin/Time Boost
-    public void PlayBoost()
+    public void PlayInteractCollect()
     {
-        if (boostClip != null) sfxSource.PlayOneShot(boostClip);
+        if (interactCollectClip != null)
+            sfxSource.PlayOneShot(interactCollectClip);
     }
-
-    // Speed Pad
-    public void PlaySpeedPad()
-    {
-        if (speedPadClip != null) sfxSource.PlayOneShot(speedPadClip);
-    }
-
-    // snowman hit
-    public void PlayCrash()
-    {
-        if (crashClip != null) sfxSource.PlayOneShot(crashClip);
-    }
-
-    //footsteps
     public void HandleFootsteps(bool isMoving, float currentSpeed)
     {
         if (isMoving && currentSpeed > 0.5f)
@@ -70,14 +74,23 @@ public class AudioManager : MonoBehaviour
             {
                 AudioClip[] steps = { footstepClip1, footstepClip2, footstepClip3, footstepClip4 };
                 movementSource.clip = steps[Random.Range(0, steps.Length)];
-                
                 movementSource.Play();
             }
-            movementSource.pitch = 0.9f + (currentSpeed / 20f); 
+            movementSource.pitch = 0.9f + (currentSpeed / 20f);
         }
         else
         {
             if (movementSource.isPlaying) movementSource.Stop();
         }
+    }
+    
+    public void PlayHouseSound()
+    {
+        
+    }
+
+    public void StopHouseSound()
+    {
+
     }
 }

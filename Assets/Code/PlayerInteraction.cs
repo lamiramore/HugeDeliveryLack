@@ -9,6 +9,7 @@ public class PlayerInteraction : MonoBehaviour
 
     private InputAction interact;
     public PlayerInput input;
+    public AudioManager AudioManager;
 
     void Awake()
     {
@@ -34,6 +35,7 @@ public class PlayerInteraction : MonoBehaviour
             Interactable interactable = hit.collider.GetComponent<Interactable>();
             if (interactable != null)
             {
+                AudioManager.PlayInteractCollect();
                 interactable.Interact();
             }
         }

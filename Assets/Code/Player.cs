@@ -83,6 +83,7 @@ public class Player : MonoBehaviour
         
         Vector2 moveInput = move.ReadValue<Vector2>();
         bool isMoving = moveInput.sqrMagnitude > 0.1f;
+        audioManager.HandleFootsteps(isMoving && controller.isGrounded, currentSpeed);
         float acceleration = finalSpeed / accelTime;
         float modifiedFinalSpeed = defaultFinalSpeed * speedModifier;
         finalSpeed = modifiedFinalSpeed;
@@ -214,6 +215,8 @@ public class Player : MonoBehaviour
         if (controller.isGrounded && jump.WasPressedThisFrame())
         { 
             yVelocity = jumpStrength;
+
+            audioManager.PlayJump();
         }
     }
 
@@ -221,6 +224,9 @@ public class Player : MonoBehaviour
     {
         animator.SetBool("dashing", true);
         Debug.Log("Dash started");
+        
+        audioManager.PlayDash();
+
         if (dashParticles != null) dashParticles.Play();
         isDashing = true;
         dashOnCooldown = true;
