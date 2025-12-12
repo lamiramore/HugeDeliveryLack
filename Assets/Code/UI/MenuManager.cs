@@ -86,7 +86,7 @@ public class MenuManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         EventSystem.current.SetSelectedGameObject(null);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
         Debug.Log("back to where we came from, right?");
     }
 
